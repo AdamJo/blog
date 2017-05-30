@@ -6,7 +6,7 @@ import Title from './title';
 import Home from '../routes/home';
 import Projects from '../routes/projects';
 import Workshop from '../routes/workshop';
-import Blog from '../routes/Blog';
+import Blog from '../routes/blog';
 import Error404 from '../routes/errors/404';
 
 import { titleOptions } from '../lib/helpers';
