@@ -1,0 +1,14 @@
+{
+  "env": {
+    "test": {
+      "presets": ["stage-0"],
+      "plugins": [
+        ["module-resolver", {
+          "root": ["./src"]
+        }],
+        [ "transform-es2015-modules-commonjs", { "loose": true } ],
+        [ "transform-react-jsx", { "pragma": "h" } ]
+      ]
+    }
+  }
+}

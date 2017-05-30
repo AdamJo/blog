@@ -1,0 +1,10 @@
+node_modules
+__test__/__snapshots__
+.DS_Store
+*.log
+build
+.vscode
+lighthouse/*.html
+.chrome
+.firebaserc
+firebase.json

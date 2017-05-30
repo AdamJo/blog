@@ -1,0 +1,68 @@
+{
+  "name": "everwaking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch",
+    "testStandard": "preact test",
+    "test": "jest --watch",
+    "test:ci": "jest -u",
+    "deploy": "firebase deploy",
+    "lightnouse": "lighthouse https://everwaking.com --output-path=./lighthouse/lighthouse.html --output html",
+    "prettier": "prettier --write --trailing-comma=all \"src/**/*.js\" \"__test__/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-config-synacor": "^1.0.0",
+    "if-env": "^1.0.0",
+    "jest": "^20.0.4",
+    "preact-cli": "^1.0.1",
+    "preact-render-to-string": "^3.6.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4"
+  },
+  "dependencies": {
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
+    "preact-router": "^2.5.2"
+  },
+  "jest": {
+    "setupFiles": [
+      "./__test__/setup/jestsetup.js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "testURL": "http://localhost:8080",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|pdf)$": "<rootDir>/__test__/mock/styleMock.js",
+      "style$": "<rootDir>/__test__/mock/styleMock.js",
+      "^react$": "preact-compat",
+      "^react-dom$": "preact-compat"
+    },
+    "collectCoverageFrom": [
+      "app/**/*.{js,jsx}"
+    ]
+  }
+}

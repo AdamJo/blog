@@ -1,0 +1,51 @@
+@import '~style/helpers';
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	padding: 0;
+	background: @primary;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+
+	display: flex;
+	justify-content: center;
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		width: 1000px;
+		height: 56px;
+	}
+
+	// filter: brightness(90%) contrast(90%) grayscale(10%); 
+	nav {
+		font-size: 100%;
+
+		a {
+			display: inline-block;
+			height: 56px;
+			line-height: 56px;
+			padding: 0 15px;
+			min-width: 50px;
+			text-align: center;
+			text-decoration: none;
+			color: @neonYellow;
+			will-change: background-color;
+
+			&:hover, &:active {
+				background: @neonSeaDark
+			}
+
+			&.active {
+				background: @neonSeaDark;
+				color: @neonSea;
+			}
+		}
+	}
+}
