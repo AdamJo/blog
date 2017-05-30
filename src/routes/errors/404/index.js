@@ -1,10 +1,8 @@
-import { h, Component } from "preact";
-import style from "./style";
-import { Link } from "preact-router";
+import { h, Component } from 'preact';
+import style from './style';
 
 export default class Error404 extends Component {
-  render() {
-    console.log(props);
+  render({ ...props }) {
     return (
       <div>
         <h1>404 Error</h1>

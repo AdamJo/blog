@@ -1,5 +1,5 @@
-import { h, Component } from "preact";
-import style from "./style";
+import { h, Component } from 'preact';
+import style from './style';
 
 export default class Title extends Component {
   render({ name }) {
@@ -12,5 +12,5 @@ export default class Title extends Component {
 }
 
 Title.defaultProps = {
-  name: "-",
+  name: '😁',
 };

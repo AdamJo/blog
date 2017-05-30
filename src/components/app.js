@@ -1,17 +1,17 @@
-import { h, Component } from "preact";
-import { Router } from "preact-router";
+import { h, Component } from 'preact';
+import { Router } from 'preact-router';
 
-import Header from "./header";
-import Title from "./title";
-import Home from "../routes/home";
-import Projects from "../routes/projects";
-import Workshop from "../routes/workshop";
-import Blog from "../routes/Blog";
-import Error404 from "../routes/errors/404";
+import Header from './header';
+import Title from './title';
+import Home from '../routes/home';
+import Projects from '../routes/projects';
+import Workshop from '../routes/workshop';
+import Blog from '../routes/Blog';
+import Error404 from '../routes/errors/404';
 
-import { titleOptions } from "../lib/helpers";
+import { titleOptions } from '../lib/helpers';
 
-import style from "./style";
+import style from './style';
 
 export default class App extends Component {
   /** Gets fired when the route changes.

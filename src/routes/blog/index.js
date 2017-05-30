@@ -1,5 +1,5 @@
-import { h, Component } from "preact";
-import style from "./style";
+import { h, Component } from 'preact';
+import style from './style';
 
 export default class Blog extends Component {
   render() {

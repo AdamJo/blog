@@ -11,9 +11,10 @@
     "testStandard": "preact test",
     "test": "jest --watch",
     "test:ci": "jest -u",
+    "lint": "eslint src && preact test",
     "deploy": "firebase deploy",
-    "lightnouse": "lighthouse https://everwaking.com --output-path=./lighthouse/lighthouse.html --output html",
-    "prettier": "prettier --write --trailing-comma=all \"src/**/*.js\" \"__test__/**/*.js\""
+    "lightnouse": "lighthouse https://adam-8df38.firebaseapp.com/ --output-path=./lighthouse/lighthouse.html --output html",
+    "prettier": "prettier --write --trailing-comma=all --single-quote \"src/**/*.js\" \"__test__/**/*.js\""
   },
   "keywords": [],
   "author": "",
@@ -28,8 +29,6 @@
     "babel-preset-env": "^1.5.1",
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^2.8.2",
-    "eslint": "^3.19.0",
-    "eslint-config-synacor": "^1.0.0",
     "if-env": "^1.0.0",
     "jest": "^20.0.4",
     "preact-cli": "^1.0.1",

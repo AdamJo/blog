@@ -1,6 +1,6 @@
-import { h } from "preact";
-import render from "preact-render-to-string";
-import { shallow, mount } from "enzyme";
+import { h } from 'preact';
+import render from 'preact-render-to-string';
+import { shallow, mount } from 'enzyme';
 
 global.h = h;
 global.render = render;
