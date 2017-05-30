@@ -1,12 +1,21 @@
-node_modules
-__test__/__snapshots__
+# system
 .DS_Store
 *.log
-build
 .vscode
+
+# project specific
+__test__/__snapshots__
+build
+
+# lighthouse testing
 lighthouse/*.html
 .chrome
+
+# hosting
 .firebaserc
 firebase.json
+
+# packaging
+node_modules
 yarn.lock
 package-lock.json
